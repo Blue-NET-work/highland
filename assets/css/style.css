@@ -1,12 +1,13 @@
 @charset "utf-8";
 @import url("bootstrap/bootstrap.css");
 @import url("bootstrap/bootstrap-theme.css");
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,300italic,300|Roboto+Condensed:300italic,400italic,400,300&subset=latin,latin-ext);
 /* CSS Document */
 
 html{
 	background:url(../img/bg.jpg) no-repeat right center;
+	background-size:86%;
 	height:100%;
-	background-size:75%;
 }
 
 body{
@@ -15,50 +16,96 @@ body{
 }
 
 .sidebar{
+	background:#120a07 url(../img/belka.jpg) no-repeat;
 	position:absolute;
-	background:#000;
-	width:25%;
+	width:284px;
 	height:100%;
 	color:#fff;
+	font-family: 'Roboto', sans-serif;
+	border:none;
+	box-shadow:none;
+	border-radius:0;
+	margin-bottom:0;
+	z-index:40;
 }
 
-.sidebar #logoHighland{
-	font-size:36px;
-	position:relative;
+.sidebar .logo{
+	margin-top:5%;
+	margin-bottom:5%;
 }
 
-.sidebar #logoHighland .logoHh{
+.sidebar .lang a{
+	padding:4px;
 }
 
-.sidebar #logoHighland .logoHi{
+.sidebar .nav.navbar-nav{
+	width:100%;
+	margin-top:10%;
+	margin-bottom:5%;
+	font-size:11px;
 }
 
-.sidebar #logoHighland .logoHg{
+.sidebar .nav.navbar-nav li{
+	float:none;
+	display:block;
+	border-bottom:1px solid #29221d;
 }
 
-.sidebar #logoHighland .logoHh{
+.sidebar .nav.navbar-nav li a{
+	color:#b3b3b3;
+	text-transform:uppercase;
+	padding-top:10px;
+	padding-bottom:10px;
 }
 
-.sidebar #logoHighland .logoHl{
+.sidebar .nav.navbar-nav li.active a,
+.sidebar .nav.navbar-nav li:hover a{
+	background:url(../img/arrow.png) no-repeat left center;
+	color:#ffdca5;
+	padding-left:30px;
 }
 
-.sidebar #logoHighland .logoHa{
+.sidebar .filmy{
 }
 
-.sidebar #logoHighland .logoHn{
+.sidebar .filmy a{
+	display:inline-block;
+	padding:5px 3px;
 }
 
-.sidebar #logoHighland .logoHd{
-	position:absolute;
-	right:-8px;
-	top:5px;
+.sidebar .filmy a:hover{
+	background:rgba(0,0,0,.4) url(../img/play.png) no-repeat center;
 }
 
+.sidebar .copyright{
+	color:rgba(149,140,134, 1);
+	text-transform:uppercase;
+	font-size:10px;
+	padding-top:20px;
+	padding-bottom:5px;
+}
 
+.sidebar .author{
+	color:rgba(255,255,255,.8);
+	font-size:10px;
+}
+
+.sidebar .author a{
+	color:#ffdca5;
+}
 
 .content{
 	position:relative;
-	width:75%;
-	margin-left:auto;
-	margin-right:0;
+	width:100%;
+	padding-left: 285px;
+	z-index:20;
+}
+
+.watermark{
+	position:relative;
+	background:url(../img/watermark.png) no-repeat;
+	width:113px;
+	height:197px;
+	top:10px;
+	left:95px;
 }
